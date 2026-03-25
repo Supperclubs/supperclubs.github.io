@@ -864,6 +864,13 @@ a.event-card-link:hover .event-card .hover-arrow{
   margin-top:.5rem;
 }
 
+/* --- Text embed note --- */
+.text-embed-note{
+  font-size:.78rem;
+  color:var(--text-muted);
+  margin-top:-.25rem;
+}
+
 /* --- YouTube video embed --- */
 .video-embed{
   position:relative;
