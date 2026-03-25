@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session #N — Supper Club</title>
+  <meta name="description" content="SESSION_DESCRIPTION">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍷</text></svg>">
+  <meta property="og:title" content="Session #N — Supper Club">
+  <meta property="og:description" content="SESSION_DESCRIPTION">
+  <meta property="og:type" content="article">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ======== Navigation ======== -->
+  <nav class="nav scrolled" id="nav">
+    <div class="container">
+      <a href="../index.html" class="nav-logo">Supper Club</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../events.html" class="active">Events</a></li>
+        <li><a href="../about.html">About</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======== Session Header ======== -->
+  <div class="session-header">
+    <div class="container">
+      <span class="status-badge upcoming">Upcoming</span><!-- or: <span class="status-badge past">Past</span> -->
+      <p class="session-label">Session #N</p>
+      <h1>THE QUESTION GOES HERE</h1>
+      <p class="session-desc">Short evocative subtitle.</p>
+      <div class="session-meta">
+        <span>DATE</span>
+        <span>TIME</span>
+        <span>LOCATION</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======== Session Body ======== -->
+  <section class="section">
+    <div class="container session-body">
+
+      <!-- The Question -->
+      <div class="reveal">
+        <h2>The Question</h2>
+        <p>A paragraph expanding on the session's central question. What makes it interesting, why it matters, what tensions it holds.</p>
+      </div>
+
+      <!-- What We Read -->
+      <div class="reveal">
+        <h2>What We Read</h2>
+        <div class="reading-cards">
+          <div class="reading-card">
+            <p class="reading-type">Article</p>
+            <p class="reading-title">Title of the Reading</p>
+            <p class="reading-author">Author Name</p>
+          </div>
+          <!-- Add more reading-card blocks as needed -->
+        </div>
+      </div>
+
+      <!-- Questions We Explored -->
+      <div class="reveal">
+        <h2>Questions We Explored</h2>
+        <ul class="discussion-questions">
+          <li>Discussion question one?</li>
+          <li>Discussion question two?</li>
+          <li>Discussion question three?</li>
+        </ul>
+      </div>
+
+      <!-- What We Found (past sessions only — remove for upcoming) -->
+      <div class="reveal">
+        <h2>What We Found</h2>
+        <ul class="takeaways">
+          <li>Takeaway or insight from the conversation.</li>
+          <li>Another theme that emerged.</li>
+          <li>A question that stayed with us.</li>
+        </ul>
+      </div>
+
+      <!-- Go Further -->
+      <div class="reveal">
+        <h2>Go Further</h2>
+        <div class="further-reading">
+          <a href="#">Related book, article, or resource &rarr;</a>
+          <a href="#">Another related resource &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======== Prev / Next Nav ======== -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <nav class="session-nav">
+        <a href="session-PREV.html" class="nav-prev">Previous Session</a>
+        <a href="session-NEXT.html" class="nav-next">Next Session</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ======== Footer ======== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-brand">
+        <p class="footer-logo">Supper Club</p>
+        <p>Conversations about big ideas.<br>First with strangers, then with friends.</p>
+      </div>
+      <div class="footer-contact">
+        <p>Interested in joining?</p>
+        <a href="mailto:hello@supperclub.com">hello@supperclub.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
