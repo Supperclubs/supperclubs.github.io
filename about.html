@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-design="living-room">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +11,14 @@
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=2">
+  <script src="js/designs.js?v=4"></script>
+  <link rel="stylesheet" href="css/designs.css?v=4">
+  <link rel="stylesheet" href="css/living-room.css?v=2">
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
   <!-- ======== Navigation ======== -->
   <nav class="nav scrolled" id="nav">
@@ -23,13 +27,14 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="events.html">Events</a></li>
-        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="about.html" class="active" aria-current="page">About</a></li>
       </ul>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
   </nav>
+  <main id="main-content">
 
   <!-- ======== Page Header ======== -->
   <div class="page-header">
@@ -50,8 +55,8 @@
       <div class="reveal">
         <h2>How it works</h2>
         <p><strong>We pick a topic</strong> &mdash; a big question worth wrestling with over dinner. Something that matters, that resists easy answers.</p>
-        <p><strong>We share a reading</strong> &mdash; a text, article, or excerpt to ground the conversation. Everyone reads it beforehand so we start from common ground.</p>
-        <p><strong>We gather and talk</strong> &mdash; no lectures, no winners. Just honest exchange. The conversation is guided but not controlled. The goal is understanding, not agreement.</p>
+        <p><strong>We share a reading</strong> &mdash; a text, article, or excerpt to ground the conversation. A short fragment gives us common ground. We read it beforehand, then return to the words together around the table.</p>
+        <p><strong>We gather and talk</strong> &mdash; no lectures, no winners. Just honest exchange. The conversation is guided but not controlled. We read closely, talk to one another, and make space for everyone to be heard. The goal is understanding, not agreement.</p>
       </div>
 
       <div class="reveal">
@@ -91,6 +96,8 @@
     </div>
   </section>
 
+  </main>
+
   <!-- ======== Footer ======== -->
   <footer class="footer">
     <div class="container">
@@ -105,6 +112,10 @@
     </div>
   </footer>
 
+  <aside class="design-bar" aria-label="Website design">
+    <div class="design-bar-inner"><label for="design-select">Make yourself at home <span>Choose a design</span></label>
+    <select id="design-select" aria-label="Choose website design"></select></div>
+  </aside>
   <script src="js/main.js"></script>
 </body>
 </html>
