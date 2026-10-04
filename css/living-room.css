@@ -122,7 +122,7 @@ html[data-design="living-room"]{
 [data-design="living-room"] body{position:relative;isolation:isolate;background:var(--bg)}
 [data-design="living-room"] body::before{
  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
- background:linear-gradient(#faf9f626,#faf9f626),url('../images/reading-together.png') center center / cover no-repeat;
+ background:linear-gradient(#faf9f626,#faf9f626),url('../images/reading-together.png?v=2') center center / cover no-repeat;
 }
 [data-design="living-room"] .nav{background:#faf9f6ed}
 [data-design="living-room"] .hero{min-height:78vh;padding-top:52px;padding-bottom:100px}
