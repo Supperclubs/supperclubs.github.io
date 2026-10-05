@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Events — Supper Club</title>
-  <meta name="description" content="Upcoming and past Supper Club gatherings.">
+  <meta name="description" content="Find our next gathering and explore the readings and conversations from past evenings.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍷</text></svg>">
   <meta property="og:title" content="Events — Supper Club">
-  <meta property="og:description" content="Upcoming and past Supper Club gatherings.">
+  <meta property="og:description" content="Find our next gathering and explore the readings and conversations from past evenings.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css?v=2">
   <script src="js/designs.js?v=4"></script>
-  <link rel="stylesheet" href="css/designs.css?v=4">
+  <link rel="stylesheet" href="css/designs.css?v=5">
   <link rel="stylesheet" href="css/living-room.css?v=3">
 </head>
 <body>
@@ -43,17 +43,45 @@
     </div>
   </div>
 
+  <section class="section">
+    <div class="container">
+      <h2 class="gatherings-heading">Upcoming gatherings</h2>
+      <div class="events-list">
+        <a href="sessions/session-5.html" class="event-card-link">
+          <div class="event-card upcoming reveal">
+            <span class="status-badge upcoming">Upcoming</span>
+            <h3>Reading Meditations together</h3>
+            <p class="event-desc">Choose 2–3 quotes from Meditations to discuss together.</p>
+            <div class="event-meta"><span>October 2026 · Date to be confirmed</span></div>
+            <p class="event-readings">Marcus Aurelius · Meditations</p>
+            <span class="hover-arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
   <!-- ======== Past Gatherings ======== -->
   <section class="section">
     <div class="container">
-      <p class="section-label text-center">Past Gatherings</p>
+      <h2 class="gatherings-heading">Past gatherings</h2>
       <div class="events-list">
+        <a href="sessions/session-4.html" class="event-card-link">
+          <div class="event-card past reveal">
+            <span class="status-badge past">Past</span>
+            <h3>What makes us human in the age of AI?</h3>
+            <p class="event-desc">What should we protect as technology changes our lives?</p>
+            <div class="event-meta"><span>May 2026</span></div>
+            <p class="event-readings">Leo XIV · Magnifica Humanitas</p>
+            <span class="hover-arrow" aria-hidden="true">→</span>
+          </div>
+        </a>
+
         <a href="sessions/session-3.html" class="event-card-link">
           <div class="event-card past reveal">
             <span class="status-badge past">Past</span>
-            <p class="event-label">Session #3</p>
             <h3>What can you know for certain?</h3>
-            <p class="event-desc">Doubt, certainty, and the one thing you cannot question.</p>
+            <p class="event-desc">Descartes on doubt and the search for something we can trust.</p>
             <div class="event-meta">
               <span>March 2026</span>
             </div>
@@ -64,9 +92,8 @@
         <a href="sessions/session-2.html" class="event-card-link">
           <div class="event-card past reveal">
             <span class="status-badge past">Past</span>
-            <p class="event-label">Session #2</p>
-            <h3>What do we really mean when we talk about love?</h3>
-            <p class="event-desc">Wholeness, longing, and the courage to love without dissolving.</p>
+            <h3>What do we mean by love?</h3>
+            <p class="event-desc">Plato and Rilke on closeness, independence and love.</p>
             <div class="event-meta">
               <span>February 2026</span>
             </div>
@@ -77,9 +104,8 @@
         <a href="sessions/session-1.html" class="event-card-link">
           <div class="event-card past reveal">
             <span class="status-badge past">Past</span>
-            <p class="event-label">Session #1</p>
             <h3>Are we prisoners of our own perception?</h3>
-            <p class="event-desc">Shadows, reality, and the painful journey toward truth.</p>
+            <p class="event-desc">Plato on what we believe and what it takes to change our minds.</p>
             <div class="event-meta">
               <span>January 2026</span>
             </div>
@@ -98,7 +124,7 @@
     <div class="container">
       <div class="footer-brand">
         <p class="footer-logo">Supper Club</p>
-        <p>A place to read, listen &amp; belong.<br>First with strangers, then with friends.</p>
+        <p>A place to read, listen &amp; belong.</p>
       </div>
       <div class="footer-contact">
         <p>Interested in joining?</p>
@@ -108,7 +134,7 @@
   </footer>
 
   <aside class="design-bar" aria-label="Website design">
-    <div class="design-bar-inner"><label for="design-select">Make yourself at home <span>Choose a design</span></label>
+    <div class="design-bar-inner"><label for="design-select">Website design</label>
     <select id="design-select" aria-label="Choose website design"></select></div>
   </aside>
   <script src="js/main.js"></script>
